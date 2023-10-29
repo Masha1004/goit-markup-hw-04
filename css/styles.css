@@ -72,6 +72,8 @@ body {
   flex-basis: calc(261-2 * 40 / 3);
 }
 
+.link-contacts {transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 .add-box {
   display: flex;
   align-items: center;
@@ -103,6 +105,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2e2f42;
 }
 
@@ -214,6 +217,7 @@ body {
   height: 56px;
   margin-left: auto;
   margin-right: auto;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -272,6 +276,10 @@ body {
 }
 
 .item-portfolio {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-portfolio:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -305,14 +313,32 @@ body {
   padding: 32px 0px;
 }
 
-.social-box {
-  width: 40px;
-  height: 40px;
-}
-
 .social-flex {
   display: flex;
   justify-content: center;
+  column-gap: 24px;
+  margin-top: 8px;
+}
+
+.social-list-link:hover {
+  background-color: #404BBF;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
+}
+
+.social-list-item {
+  fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
 }
 
 .team-img {
@@ -348,8 +374,14 @@ body {
 }
 
 .footer-box {
+  display: flex;
   padding: 100px 0;
   background: #2e2f42;
+}
+
+.footer-left {
+  margin-right: 120px;
+  margin-left: 156px;
 }
 
 .logotype-footer {
@@ -370,3 +402,25 @@ body {
   text-transform: uppercase;
   color: #f4f4fd;
 }
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-p {color:  #FFFFFF;}
+
+.social-list-footer {fill: #f4f4fd;
+  width: 24px;
+  height: 24px;}
+
+.social-hover-link {display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;}
+
+.social-hover-link:hover {background-color: #31D0AA;}
