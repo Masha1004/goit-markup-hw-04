@@ -427,7 +427,19 @@ body {
 }
 
 .footer-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
   color: #ffffff;
+}
+
+.social-footer-flex {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .social-list-footer {
@@ -443,7 +455,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4d5ae5;
 }
 
