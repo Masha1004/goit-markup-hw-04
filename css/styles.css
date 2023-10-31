@@ -410,7 +410,7 @@ body {
 .footer-left {
   align-items: baseline;
   margin-right: 120px;
-  margin-left: 156px;
+  padding-left: 156px;
 }
 
 .logotype-footer {
