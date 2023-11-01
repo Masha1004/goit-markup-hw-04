@@ -481,6 +481,7 @@ body {
   background-color: #4d5ae5;
 }
 
-.social-hover-link:hover {
+.social-hover-link:hover,
+.social-hover-link:focus {
   background-color: #31d0aa;
 }
